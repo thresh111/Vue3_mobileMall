@@ -3,6 +3,11 @@
 
 这是一个基于 Vue3(composition api) + TypeScript + Pinia + Vue Router4.x + Vant 4 技术栈开发的移动电商项目。
 
+登录账号体验：
+账号：13211111111
+密码：111111
+
+
 ## 技术栈
 
 - Vue3(composition api)
