@@ -1,46 +1,88 @@
-# fenggou_mobile
-
-This template should help get you started developing with Vue 3 in Vite.
-
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
 ```sh
+# 移动电商项目—易购
+
+这是一个基于 Vue3(composition api) + TypeScript + Pinia + Vue Router4.x + Vant 4 技术栈开发的移动电商项目。
+
+## 技术栈
+
+- Vue3(composition api)
+- TypeScript
+- Pinia
+- Vue Router4.x
+- Vant 4
+
+## 辅助插件
+
+- axios
+- sass
+- lodash
+- store
+
+## 项目安装和启动
+
+1. 克隆项目到本地
+
+​```bash
+git clone https://github.com/yourusername/yourproject.git
+​```
+
+2. 安装依赖
+
+​```bash
+cd yourproject
 npm install
-```
+​```
 
-### Compile and Hot-Reload for Development
+3. 启动项目
 
-```sh
-npm run dev
-```
+​```bash
+npm run serve
+​```
 
-### Type-Check, Compile and Minify for Production
+4. 打包项目
 
-```sh
+​```bash
 npm run build
-```
+​```
 
-### Lint with [ESLint](https://eslint.org/)
+## 项目结构
 
-```sh
-npm run lint
+​```
+├── public                   # 静态文件
+├── src                      # 项目源码
+│   ├── api                 # 接口请求
+│   ├── assets              # 图片、样式等资源
+│   ├── components          # 公共组件
+│   ├── config              # 主题配置
+│   ├── router              # 路由配置
+│   ├── store               # 状态管理
+│   ├── utils               # 工具函数
+│   ├── views               # 页面组件
+│   ├── App.vue             # 根组件
+│   ├── components.d.ts     # 自动导入组件配置
+│   └── main.ts             # 入口文件
+├── .eslintrc.js             # eslint 配置文件
+├── .gitignore             	 # git配置文件
+├── .prettierrc.json          # prettier 配置文件
+├── babel.config.js          # babel 配置文件
+├── env.d.ts          		 # TS声明全局变量文件
+├── package.json             # 项目依赖
+├── README.md                # 项目说明
+└── tsconfig.json            # typescript 配置文件
+└── vite.config.ts           # vite 配置文件
+
+​```
+
+## 开发规范
+
+1. 遵循 [Vue 风格指南](https://cn.vuejs.org/v2/style-guide/)
+2. 使用 [ESLint](https://eslint.org/) 和 [Prettier](https://prettier.io/) 统一代码风格
+3. 使用 [Commitizen](https://github.com/commitizen/cz-cli) 进行规范化的 git 提交
+
+## 贡献者
+- Thresh
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)npm run lint
 ```
