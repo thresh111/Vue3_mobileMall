@@ -1,5 +1,5 @@
-```sh
-# 移动电商项目—易购
+```
+# BToC线上商城
 
 这是一个基于 Vue3(composition api) + TypeScript + Pinia + Vue Router4.x + Vant 4 技术栈开发的移动电商项目。
 
